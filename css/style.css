@@ -1,0 +1,226 @@
+/* Уже с самой первой стадии все пошло не по плану
+    На следующих проектах стоит подготовиться 
+    и улучшить дизайн, а также сделать код более чистым. */
+
+
+body {
+    background: rgb(249, 249, 249);
+}
+
+.container {
+    background: rgb(249, 249, 249);
+}
+
+
+.buttonUI {
+    display: block;
+    border: 1.3px solid #485863;
+    margin: 0 0.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.logIn {
+    background: white;
+    color: #485863;
+    border-color: #485863;
+}
+.logIn:hover {
+    background: #485863;
+    color:white;
+}
+.logIn:link {
+    background: #485863;
+    color:white;
+}
+.logIn:active {
+    background: #485863;
+    color:white;
+}
+
+
+.signUp {
+    background: white;
+    color: #485863;
+    border-color: #485863;
+}
+
+.signUp:hover {
+    background: #485863;
+    color:white;
+}
+.signUp:link {
+    background: white;
+    color: #485863;
+    border-color: #485863;
+}
+.signUp:active {
+    background: white;
+    color: #485863;
+    border-color: #485863;
+}
+
+.bd-placeholder-img {
+    background-color: rgba(0, 0, 0, 0.829)!important;
+    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
+}
+
+.dropdown .btn:active {background: cyan; color:#000;}
+.lol:active {
+    background-color: #767D81 !important;
+}
+
+.block_main_article {
+    filter: brightness(0.05); -webkit-filter: brightness(0.05); 
+    transition:-webkit-filter 50ms linear;
+    transition:filter 50ms linear;
+    transition:filter 50ms linear, -webkit-filter 50ms linear;
+}
+
+.block_main_article:hover {
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+}
+
+.bg {
+    
+    background-image: url("/main-tn.png");
+    
+    height: 100%;
+  
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+#searchForm {
+    width: 100%;
+    font-family: 'Poppins', arial, sans-serif;
+    font-size: 12px;
+    color: #767D81;
+    padding: 0.5em 0.7em;
+    border-radius: 5px;
+    border: 1px solid #767D81;
+    outline: none;
+}
+
+.box div {
+    box-sizing: border-box;
+    padding-top: 1rem!important;
+}
+
+
+.nav-line {
+    display: block;
+    background: #2B353C;
+    width: 100%;
+    border: solid #767D81 0.3px;
+}
+@media screen and (min-width: 968px){
+    .hamburger {
+        display:none;
+    }
+
+    .hide {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 968px) {
+
+.hideDiv {
+    display: none;
+}
+.hRl {
+    background-color: #2B353C ;
+    
+    margin: 0 auto;
+    width: 100%;
+
+}
+.hamburger {
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+    right: 50%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    justify-content: end;
+}
+
+.nav-links {
+    position: absolute;
+    color: #fff!important;
+    height: 100vh;
+    width:100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.res {
+    color: #fff;    
+    z-index: 2;
+}
+
+    
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .hideDiv   {
+      display: none!important;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    justify-content: end;
+  }
+  .line {
+    width: 30px;
+    height: 3px;
+    background: #2B353C;
+    margin: 5px;
+  }
+
+
+      
+    
+    
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 8vh;
+        right: 0%;
+        height: 40vh;
+        width: 50vh;
+        background: #485863;
+        
+        transition: all 1s ease-out;
+        pointer-events: none;
+        justify-content: space-between;
+        z-index: 2;
+        transform: translateY(30%);
+      }
+
+      
+   
+      .nav-links.open {
+        display: block;
+        pointer-events: all;
+      }
+      
+      .nav-links.fade {
+          display: none;
+      }
+}
