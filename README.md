@@ -1,2 +1,2 @@
 # blogit.github.io
-Technical Blog
+The Terrible Technical Blog
